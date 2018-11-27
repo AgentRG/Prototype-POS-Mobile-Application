@@ -17,8 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.SalesActivity" />
-        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.BOH" />
-        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.Clients"></activity>
+        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.BOHActivity" />
+        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.ClientsActivity"></activity>
     </application>
 
 </manifest>

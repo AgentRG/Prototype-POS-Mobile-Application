@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.agentrg.Adidas_mPosPrototype.LaunchOptions.BOH;
-import com.agentrg.Adidas_mPosPrototype.LaunchOptions.Clients;
+import com.agentrg.Adidas_mPosPrototype.LaunchOptions.BOHActivity;
+import com.agentrg.Adidas_mPosPrototype.LaunchOptions.ClientsActivity;
 import com.agentrg.Adidas_mPosPrototype.LaunchOptions.SalesActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.boh:
-                startActivity(new Intent(MainActivity.this, BOH.class));
+                startActivity(new Intent(MainActivity.this, BOHActivity.class));
                 overridePendingTransition( R.anim.slide_up, R.anim.slide_down);
                 break;
 
             case R.id.clients:
-                startActivity(new Intent(MainActivity.this, Clients.class));
+                startActivity(new Intent(MainActivity.this, ClientsActivity.class));
                 overridePendingTransition( R.anim.slide_up, R.anim.slide_down);
                 break;
         }

@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import com.agentrg.Adidas_mPosPrototype.R;
 
-public class Clients extends AppCompatActivity {
+public class BOHActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clients);
+        setContentView(R.layout.activity_boh);
     }
 
     @Override
