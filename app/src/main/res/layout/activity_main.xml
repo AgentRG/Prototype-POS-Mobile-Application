@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/appTitle"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:lineSpacingExtra="36sp"
-        android:text="Adidas mPOS (Prototype)"
+        android:text="@string/app_name"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,8 @@
 
     <ImageButton
         android:id="@+id/clients"
-        android:layout_width="186dp"
-        android:layout_height="165dp"
+        android:layout_width="110dp"
+        android:layout_height="126dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/sales"
@@ -41,8 +41,8 @@
 
     <ImageButton
         android:id="@+id/sales"
-        android:layout_width="186dp"
-        android:layout_height="165dp"
+        android:layout_width="112dp"
+        android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/sales"
@@ -51,15 +51,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appTitle"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="spread"
         app:srcCompat="@drawable/sales"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/boh"
-        android:layout_width="186dp"
-        android:layout_height="165dp"
+        android:layout_width="109dp"
+        android:layout_height="144dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/sales"

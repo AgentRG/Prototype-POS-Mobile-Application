@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">ISYS 463 mPOS Prototype</string>
+    <string name="app_name">Adidas mPOS (Prototype)</string>
+    <string name="sales">Sales</string>
 </resources>
