@@ -32,14 +32,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.sales:
                 startActivity(new Intent(MainActivity.this, SalesActivity.class));
+                overridePendingTransition( R.anim.slide_up, R.anim.slide_down);
                 break;
 
             case R.id.boh:
                 startActivity(new Intent(MainActivity.this, BOH.class));
+                overridePendingTransition( R.anim.slide_up, R.anim.slide_down);
                 break;
 
             case R.id.clients:
                 startActivity(new Intent(MainActivity.this, Clients.class));
+                overridePendingTransition( R.anim.slide_up, R.anim.slide_down);
                 break;
         }
     }

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Adidas mPOS (Prototype)</string>
     <string name="sales">Sales</string>
+    <string name="backOfHouse">Back of House</string>
+    <string name="clients">Clients</string>
+    <string name="storeNumber">Store #5775</string>
+    <string name="registerNumber">Register #001</string>
 </resources>
