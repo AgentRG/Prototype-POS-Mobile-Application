@@ -5,4 +5,15 @@
     <string name="clients">Clients</string>
     <string name="storeNumber">Store #5775</string>
     <string name="registerNumber">Register #001</string>
+    <string name="transaction">Transactions</string>
+    <string name="reports">Reports</string>
+    <string name="giftCardBalance">Gift Card Balance</string>
+    <string name="admin">Admin</string>
+    <string name="clientList">Client List</string>
+    <string name="tasks">Tasks</string>
+    <string name="messages">Messages</string>
+    <string name="inventory">Inventory</string>
+    <string name="shipment">Shipment</string>
+    <string name="Transfers">Transfers</string>
+    <string name="Reports">Reports</string>
 </resources>

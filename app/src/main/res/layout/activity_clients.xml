@@ -4,7 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LaunchOptions.ClientsActivity">
+    tools:context=".MainMenu.ClientsActivity">
+
+    <Button
+        android:id="@+id/clientList"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/clientList"
+        app:layout_constraintBottom_toTopOf="@+id/tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clients" />
+
+    <Button
+        android:id="@+id/tasks"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/tasks"
+        app:layout_constraintBottom_toTopOf="@+id/messages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientList" />
+
+    <Button
+        android:id="@+id/messages"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/messages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks" />
 
     <TextView
         android:id="@+id/clients"

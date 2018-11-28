@@ -4,7 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LaunchOptions.BOHActivity">
+    tools:context=".MainMenu.BOHActivity">
+
+    <Button
+        android:id="@+id/inventory"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/inventory"
+        app:layout_constraintBottom_toTopOf="@+id/shipment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backOfHouse" />
+
+    <Button
+        android:id="@+id/shipment"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/shipment"
+        app:layout_constraintBottom_toTopOf="@+id/transfers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventory" />
+
+    <Button
+        android:id="@+id/transfers"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/Transfers"
+        app:layout_constraintBottom_toTopOf="@+id/reports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shipment" />
+
+    <Button
+        android:id="@+id/reports"
+        android:layout_width="166dp"
+        android:layout_height="53dp"
+        android:text="@string/reports"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfers" />
 
     <TextView
         android:id="@+id/backOfHouse"

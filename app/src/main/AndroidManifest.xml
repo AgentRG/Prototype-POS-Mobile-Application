@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.agentrg.Adidas_mPosPrototype.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.SalesActivity" />
-        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.BOHActivity" />
-        <activity android:name="com.agentrg.Adidas_mPosPrototype.LaunchOptions.ClientsActivity"></activity>
+        <activity android:name=".MainMenu.SalesActivity" />
+        <activity android:name=".MainMenu.BOHActivity" />
+        <activity android:name=".MainMenu.ClientsActivity" />
+        <activity android:name=".MainMenu.SalesMenu.Transactions" />
+        <activity android:name=".MainMenu.Clients.ClientList" />
+        <activity android:name=".MainMenu.BOH.Inventory"></activity>
     </application>
 
 </manifest>
