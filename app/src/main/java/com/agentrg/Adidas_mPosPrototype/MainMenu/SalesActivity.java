@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.agentrg.Adidas_mPosPrototype.MainMenu.SalesMenu.Transactions;
 import com.agentrg.Adidas_mPosPrototype.R;
@@ -17,16 +18,16 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sales);
 
-        Button transaction = findViewById(R.id.transactions);
+        ImageButton transaction = findViewById(R.id.transaction);
         transaction.setOnClickListener(this);
 
-        Button reports = findViewById(R.id.reports);
+        ImageButton reports = findViewById(R.id.reports);
         reports.setOnClickListener(this);
 
-        Button giftCardBalance = findViewById(R.id.giftCardBalance);
+        ImageButton giftCardBalance = findViewById(R.id.giftCardBalance);
         giftCardBalance.setOnClickListener(this);
 
-        Button admin = findViewById(R.id.admin);
+        ImageButton admin = findViewById(R.id.admin);
         admin.setOnClickListener(this);
 
     }
@@ -34,7 +35,7 @@ public class SalesActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch(v.getId()) {
-            case R.id.transactions:
+            case R.id.transaction:
                 startActivity(new Intent(SalesActivity.this, Transactions.class));
                 overridePendingTransition( R.anim.slide_up, R.anim.slide_down);
                 break;

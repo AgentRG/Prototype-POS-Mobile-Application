@@ -16,6 +16,7 @@
         android:layout_marginBottom="8dp"
         android:lineSpacingExtra="36sp"
         android:text="@string/clientList"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"

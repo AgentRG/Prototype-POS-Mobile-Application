@@ -16,7 +16,7 @@
         android:layout_marginBottom="8dp"
         android:lineSpacingExtra="36sp"
         android:text="@string/sales"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,59 +64,56 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131" />
 
-    <Button
-        android:id="@+id/transactions"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/transaction"
-        app:layout_constraintBottom_toTopOf="@+id/reports"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerNumber" />
-
-    <Button
-        android:id="@+id/reports"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/reports"
-        app:layout_constraintBottom_toTopOf="@+id/giftCardBalance"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transactions" />
-
-    <Button
-        android:id="@+id/giftCardBalance"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/giftCardBalance"
-        app:layout_constraintBottom_toTopOf="@+id/admin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reports" />
-
-    <Button
+    <ImageButton
         android:id="@+id/admin"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/admin"
+        android:layout_width="333dp"
+        android:layout_height="101dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/giftCardBalance" />
+        app:layout_constraintTop_toBottomOf="@+id/giftCardBalance"
+        app:srcCompat="@drawable/admin" />
+
+    <ImageButton
+        android:id="@+id/reports"
+        android:layout_width="325dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/giftCardBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transaction"
+        app:srcCompat="@drawable/reports" />
+
+    <ImageButton
+        android:id="@+id/giftCardBalance"
+        android:layout_width="325dp"
+        android:layout_height="103dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reports"
+        app:srcCompat="@drawable/giftcardbalance" />
+
+    <ImageButton
+        android:id="@+id/transaction"
+        android:layout_width="325dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/reports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerNumber"
+        app:srcCompat="@drawable/transaction" />
 
 </android.support.constraint.ConstraintLayout>
