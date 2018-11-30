@@ -6,39 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainMenu.ClientsActivity">
 
-    <Button
-        android:id="@+id/clientList"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:text="@string/clientList"
-        app:layout_constraintBottom_toTopOf="@+id/tasks"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clients" />
-
-    <Button
-        android:id="@+id/tasks"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:text="@string/tasks"
-        app:layout_constraintBottom_toTopOf="@+id/messages"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clientList" />
-
-    <Button
-        android:id="@+id/messages"
-        android:layout_width="166dp"
-        android:layout_height="53dp"
-        android:text="@string/messages"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tasks" />
-
     <TextView
         android:id="@+id/clients"
         android:layout_width="wrap_content"
@@ -57,4 +24,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.015" />
+
+    <ImageButton
+        android:id="@+id/clientList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clients"
+        app:srcCompat="@drawable/clientlist" />
+
+    <ImageButton
+        android:id="@+id/tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/messages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientList"
+        app:srcCompat="@drawable/tasks" />
+
+    <ImageButton
+        android:id="@+id/messages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasks"
+        app:srcCompat="@drawable/messages" />
 </android.support.constraint.ConstraintLayout>

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.agentrg.Adidas_mPosPrototype.MainMenu.Clients.ClientList;
 import com.agentrg.Adidas_mPosPrototype.R;
@@ -17,13 +18,13 @@ public class ClientsActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clients);
 
-        Button clientList = findViewById(R.id.clientList);
+        ImageButton clientList = findViewById(R.id.clientList);
         clientList.setOnClickListener(this);
 
-        Button tasks = findViewById(R.id.tasks);
+        ImageButton tasks = findViewById(R.id.tasks);
         tasks.setOnClickListener(this);
 
-        Button messages = findViewById(R.id.messages);
+        ImageButton messages = findViewById(R.id.messages);
         messages.setOnClickListener(this);
     }
 
