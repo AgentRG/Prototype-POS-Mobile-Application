@@ -5,7 +5,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.agentrg.Adidas_mPosPrototype.MainMenu.BOH.Inventory;
 import com.agentrg.Adidas_mPosPrototype.R;
@@ -17,16 +17,16 @@ public class BOHActivity extends AppCompatActivity implements View.OnClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boh);
 
-        Button inventory = findViewById(R.id.inventory);
+        ImageButton inventory = findViewById(R.id.inventory);
         inventory.setOnClickListener(this);
 
-        Button shipment = findViewById(R.id.shipment);
+        ImageButton shipment = findViewById(R.id.shipment);
         shipment.setOnClickListener(this);
 
-        Button transfers = findViewById(R.id.transfers);
+        ImageButton transfers = findViewById(R.id.transfers);
         transfers.setOnClickListener(this);
 
-        Button reports = findViewById(R.id.reports);
+        ImageButton reports = findViewById(R.id.reports);
         reports.setOnClickListener(this);
 
     }

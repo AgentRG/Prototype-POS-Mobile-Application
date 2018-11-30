@@ -16,4 +16,5 @@
     <string name="shipment">Shipment</string>
     <string name="Transfers">Transfers</string>
     <string name="Reports">Reports</string>
+    <string name="your_string"><u>Underlined text</u></string>
 </resources>
