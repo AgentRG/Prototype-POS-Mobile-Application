@@ -52,12 +52,12 @@ public class DummyFragment extends Fragment {
         /*for (int i = 0; i < 20; i++) {
             arrayList.add(title+" Items " + i);//Adding items to recycler view
         }*/
-        arrayList.add("Andrea Annable");
-        arrayList.add("Toby Barker");
-        arrayList.add("Jamie Warren");
-        arrayList.add("Jennifer Hargraves");
-        arrayList.add("Tommy Estrada");
-        arrayList.add("Bridget Munoz");
+        arrayList.add("001                                                 Andrea Annable");
+        arrayList.add("002                                                        Toby Barker");
+        arrayList.add("003                                                    Jamie Warren");
+        arrayList.add("004                                           Jennifer Hargraves");
+        arrayList.add("005                                                 Tommy Estrada");
+        arrayList.add("006                                                   Bridget Munoz");
 
         RecyclerView_Adapter adapter = new RecyclerView_Adapter(getActivity(), arrayList);
         recyclerView.setAdapter(adapter);// set adapter on recyclerview
