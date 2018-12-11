@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context="com.agentrg.Adidas_mPosPrototype.MainMenu.BOH.Inventory">
 
@@ -17,7 +18,8 @@
         android:lineSpacingExtra="36sp"
         android:text="@string/inventory"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

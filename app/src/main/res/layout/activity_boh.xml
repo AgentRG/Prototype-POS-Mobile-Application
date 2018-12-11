@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainMenu.BOHActivity">
 
     <TextView
@@ -11,14 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="monospace"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
         android:lineSpacingExtra="36sp"
         android:text="@string/backOfHouse"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,12 +30,12 @@
     <ImageButton
         android:id="@+id/inventory"
         android:layout_width="345dp"
-        android:layout_height="100dp"
+        android:layout_height="88dp"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/shipment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backOfHouse"
         app:srcCompat="@drawable/inventory" />
@@ -42,7 +43,7 @@
     <ImageButton
         android:id="@+id/shipment"
         android:layout_width="353dp"
-        android:layout_height="117dp"
+        android:layout_height="111dp"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/transfers"
@@ -55,7 +56,7 @@
     <ImageButton
         android:id="@+id/transfers"
         android:layout_width="353dp"
-        android:layout_height="120dp"
+        android:layout_height="110dp"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/reports"
@@ -68,7 +69,8 @@
     <ImageButton
         android:id="@+id/reports"
         android:layout_width="353dp"
-        android:layout_height="132dp"
+        android:layout_height="118dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"

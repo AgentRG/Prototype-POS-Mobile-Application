@@ -16,7 +16,7 @@
         android:lineSpacingExtra="36sp"
         android:text="@string/transaction"
         android:textAllCaps="false"
-        android:fontFamily="monospace"
+        android:fontFamily="sans-serif"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
