@@ -30,4 +30,11 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="1038dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/line2" />
 </android.support.design.widget.CoordinatorLayout>

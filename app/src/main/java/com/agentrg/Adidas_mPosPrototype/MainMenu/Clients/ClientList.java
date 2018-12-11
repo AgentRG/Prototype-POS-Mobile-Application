@@ -1,24 +1,28 @@
 package com.agentrg.Adidas_mPosPrototype.MainMenu.Clients;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-
+import android.view.View;
+import android.widget.ImageButton;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.agentrg.Adidas_mPosPrototype.R;
 
-public class ClientList extends AppCompatActivity {
+public class ClientList extends AppCompatActivity implements View.OnClickListener {
     private static Toolbar toolbar;
     private static ViewPager viewPager;
     private static TabLayout tabLayout;
+    private static int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,9 @@ public class ClientList extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        ImageButton imageButton8 = findViewById(R.id.imageButton8);
+        imageButton8.setOnClickListener(this);
 
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         setupViewPager(viewPager);
@@ -72,6 +79,16 @@ public class ClientList extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.imageButton8:
+                showMessage(v);
+                i++;
+                break;
+        }
+    }
+
 
     //View Pager fragments setting adapter class
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -102,6 +119,27 @@ public class ClientList extends AppCompatActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             return mFragmentTitleList.get(position);
+        }
+    }
+    public static void showMessage(final View view) {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(view.getContext());
+        if(i == 0) {
+            alertDialog.setTitle("Andrea Annable");
+            alertDialog.setPositiveButton("View Information", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+
+                }
+            });
+            alertDialog.show();
+        }
+        if(i == 1) {
+            alertDialog.setTitle("Toby Barker");
+            alertDialog.setPositiveButton("View Information", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) {
+
+                }
+            });
+            alertDialog.show();
         }
     }
 }
