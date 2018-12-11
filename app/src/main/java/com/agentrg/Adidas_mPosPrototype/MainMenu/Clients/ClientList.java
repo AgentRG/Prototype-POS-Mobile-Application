@@ -127,7 +127,7 @@ public class ClientList extends AppCompatActivity implements View.OnClickListene
             alertDialog.setTitle("Andrea Annable");
             alertDialog.setPositiveButton("View Information", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-
+                    showInformation(view);
                 }
             });
             alertDialog.show();
@@ -141,5 +141,11 @@ public class ClientList extends AppCompatActivity implements View.OnClickListene
             });
             alertDialog.show();
         }
+    }
+    public static void showInformation(final View view) {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(view.getContext());
+        alertDialog.setTitle("Andrea Annable");
+        alertDialog.setMessage("Name: Andrea Annable\nPhone #: 555-555-5555\nAddress: 123 Example Dr.\nCity: Example City");
+        alertDialog.show();
     }
 }
