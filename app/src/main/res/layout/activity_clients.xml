@@ -30,7 +30,7 @@
     <ImageButton
         android:id="@+id/clientList"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="161dp"
         android:background="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/tasks"
@@ -43,12 +43,12 @@
     <ImageButton
         android:id="@+id/tasks"
         android:layout_width="wrap_content"
-        android:layout_height="159dp"
+        android:layout_height="160dp"
         android:background="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toTopOf="@+id/messages"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clientList"
         app:srcCompat="@drawable/tasks" />
@@ -56,7 +56,7 @@
     <ImageButton
         android:id="@+id/messages"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="134dp"
         android:background="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
