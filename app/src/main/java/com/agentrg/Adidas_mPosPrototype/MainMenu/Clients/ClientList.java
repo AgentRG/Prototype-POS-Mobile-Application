@@ -140,7 +140,6 @@ public class ClientList extends AppCompatActivity implements View.OnClickListene
                 }
             });
             alertDialog.show();
-            i = 0;
         }
     }
     public static void showInformationAndrea(final View view) {

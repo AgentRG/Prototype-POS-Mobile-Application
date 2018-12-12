@@ -58,6 +58,8 @@ public class DummyFragment extends Fragment {
         arrayList.add("004                                           Jennifer Hargraves");
         arrayList.add("005                                                 Tommy Estrada");
         arrayList.add("006                                                   Bridget Munoz");
+        arrayList.add("007                                                         John Smith");
+        arrayList.add("008                                                        Elisa Hurley");
 
         RecyclerView_Adapter adapter = new RecyclerView_Adapter(getActivity(), arrayList);
         recyclerView.setAdapter(adapter);// set adapter on recyclerview
