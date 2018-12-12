@@ -21,7 +21,8 @@
         <activity android:name=".MainMenu.ClientsActivity" />
         <activity android:name=".MainMenu.SalesMenu.Transactions" />
         <activity android:name=".MainMenu.Clients.ClientList" />
-        <activity android:name=".MainMenu.BOH.Inventory"></activity>
+        <activity android:name=".MainMenu.BOH.Inventory" />
+        <activity android:name=".MainMenu.SalesMenu.purchase"></activity>
     </application>
 
 </manifest>
