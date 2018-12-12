@@ -38,15 +38,39 @@
         app:layout_constraintTop_toBottomOf="@+id/inventory" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/shoeblack"
         android:layout_width="wrap_content"
-        android:layout_height="157dp"
+        android:layout_height="203dp"
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView2"
-        app:srcCompat="@drawable/shoe" />
+        app:srcCompat="@drawable/shoeblack" />
+
+    <ImageView
+        android:id="@+id/shoeblue"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_marginTop="44dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView2"
+        app:srcCompat="@drawable/shoeblue" />
+
+    <ImageView
+        android:id="@+id/shoemaroon"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        android:layout_marginTop="44dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView2"
+        app:srcCompat="@drawable/shoemaroon" />
 
     <TextView
         android:id="@+id/textView5"
@@ -57,7 +81,7 @@
         android:text="Adidas Women's UltraBoost"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintBottom_toTopOf="@+id/shoeblack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +94,7 @@
         android:layout_height="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/shoeblack"
         app:srcCompat="@drawable/line" />
 
     <TextView
@@ -85,6 +109,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="45dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Color"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="50dp"
@@ -95,7 +132,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintVertical_bias="0.033" />
 
     <Button
         android:id="@+id/button3"
@@ -168,5 +205,86 @@
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/imageView11"
         app:layout_constraintVertical_bias="0.228" />
+
+    <ImageButton
+        android:id="@+id/shoeblacktick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shoebluenotick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/shoeblacktick" />
+
+    <ImageButton
+        android:id="@+id/shoeblacknotick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shoebluenotick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/shoeblacknotick" />
+
+    <ImageButton
+        android:id="@+id/shoebluenotick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shoemaroonnotick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shoeblacktick"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:srcCompat="@drawable/shoebluenotick" />
+
+    <ImageButton
+        android:id="@+id/shoebluetick"
+        android:layout_width="100dp"
+        android:visibility="invisible"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shoemaroonnotick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shoeblacktick"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:srcCompat="@drawable/shoebluetick" />
+
+    <ImageButton
+        android:id="@+id/shoemaroonnotick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shoebluenotick"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:srcCompat="@drawable/shoemaroonnotick" />
+
+    <ImageButton
+        android:id="@+id/shoemaroontick"
+        android:layout_width="100dp"
+        android:visibility="invisible"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shoebluenotick"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:srcCompat="@drawable/shoemaroontick" />
 
 </android.support.constraint.ConstraintLayout>
