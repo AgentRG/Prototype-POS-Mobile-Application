@@ -26,6 +26,7 @@ public class purchase extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.done:
+                finish();
                 startActivity(new Intent(purchase.this, SalesActivity.class));
                 break;
         }
